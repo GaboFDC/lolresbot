@@ -58,6 +58,6 @@ if __name__ == '__main__':
     httpd.handle_request()
 
 # Defining message for handling start and help commands
-@bot.message_handler(commands=['start', 'help'])
+@mybot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
     mybot.reply_to(message, "Hola, este es el Bot del grupo de League of Legends de la Resistencia =) R&R")
