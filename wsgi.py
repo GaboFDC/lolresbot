@@ -1,5 +1,12 @@
 #!/usr/bin/python
 import os
+import telebot
+
+TOKEN = '134776856:AAFtSET8UmwZkEglBPfxO97KdlWL66aDvFM'
+
+mybot = telebot.TeleBot(TOKEN)
+
+mybot.get_me()
 
 virtenv = os.environ['OPENSHIFT_PYTHON_DIR'] + '/virtenv/'
 virtualenv = os.path.join(virtenv, 'bin/activate_this.py')
