@@ -62,4 +62,4 @@ if __name__ == '__main__':
 def send_welcome(message):
     mybot.reply_to(message, "Hola, este es el Bot del grupo de League of Legends de la Resistencia =) R&R")
 
-bot.polling() # Start the bot
+mybot.polling() # Start the bot
