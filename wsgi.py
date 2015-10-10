@@ -62,4 +62,14 @@ if __name__ == '__main__':
 def send_welcome(message):
     mybot.reply_to(message, "Hola, este es el Bot del grupo de League of Legends de la Resistencia =) R&R")
 
+@mybot.message_handler(commands=['pipol'])
+def send_people(message):
+    mybot.reply_to(message, "Los loleros son:"
+                            " - Oscar alias @VincentJackal "
+                            " - Jose alias Dent @Felizzola "
+                            " - Leo alias RTBrownyE @RioTBrownyE "
+                            " - DavoPls alias Davox0 @Davo76 "
+                            " - Gabo alias WardDragon @GaboFDC "
+                            " - Leidy alias aniita @aniita13 ")
+
 mybot.polling() # Start the bot
