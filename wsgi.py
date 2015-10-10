@@ -56,3 +56,8 @@ if __name__ == '__main__':
     httpd = make_server('localhost', 8051, application)
     # Wait for a single request, serve it and quit.
     httpd.handle_request()
+
+# Defining message for handling start and help commands
+@bot.message_handler(commands=['start', 'help'])
+def send_welcome(message):
+    bot.reply_to(message, "Hola, este es el Bot del grupo de League of Legends de la Resistencia =) R&R")
