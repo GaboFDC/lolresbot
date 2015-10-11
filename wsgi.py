@@ -1,12 +1,15 @@
 #!/usr/bin/python
 import os
 import telebot
+import random
 
 TOKEN = '134776856:AAFtSET8UmwZkEglBPfxO97KdlWL66aDvFM'
 
 mybot = telebot.TeleBot(TOKEN)
 
 mybot.get_me()
+
+MEMES = ["Davo Pls", "Dent no penta", "Allstar=Alistar", "Flash al red", "Smite al nexo", "GG izi", "Bronzooooooodia el inmortal", "Soy smurf de diamante, yo carreo - 0/24/1"]
 
 virtenv = os.environ['OPENSHIFT_PYTHON_DIR'] + '/virtenv/'
 virtualenv = os.path.join(virtenv, 'bin/activate_this.py')
@@ -71,5 +74,10 @@ def send_people(message):
                             " - DavoPls alias Davox0 @Davo76 \n"
                             " - Gabo alias WardDragon @GaboFDC \n"
                             " - Leidy alias aniita @aniita13 \n")
+
+@mybot.message_handler(func=lambda message: True)
+def reply_all(message):
+    MEME=random.choice(MEMES)
+    mybot.reply_to(message, message.text+"??"+MEME)
 
 mybot.polling() # Start the bot
