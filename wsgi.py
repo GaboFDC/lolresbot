@@ -78,6 +78,6 @@ def send_people(message):
 @mybot.message_handler(func=lambda message: True)
 def reply_all(message):
     MEME=random.choice(MEMES)
-    mybot.reply_to(message, message.text+"??"+MEME)
+    mybot.reply_to(message, message.text+"??? \n"+MEME)
 
 mybot.polling() # Start the bot
