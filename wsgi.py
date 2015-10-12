@@ -9,7 +9,9 @@ mybot = telebot.TeleBot(TOKEN)
 
 mybot.get_me()
 
-MEMES = ["Davo Pls", "Dent no penta", "Allstar=Alistar", "Flash al red", "Smite al nexo", "GG izi", "Bronzooooooodia el inmortal", "Soy smurf de diamante, yo carreo - 0/24/1"]
+MEMES = ["Davo Pls", "Dent no penta", "Allstar=Alistar", "Flash al red", "Smite al nexo", "GG izi",
+         "Bronzooooooodia el inmortal", "Soy smurf de diamante, yo carreo - 0/24/1", "Coño de la madre!!!", "</3",
+         "Tu papá", "Report", "1vs1? n00b", "Me la pelan todos"]
 
 virtenv = os.environ['OPENSHIFT_PYTHON_DIR'] + '/virtenv/'
 virtualenv = os.path.join(virtenv, 'bin/activate_this.py')
