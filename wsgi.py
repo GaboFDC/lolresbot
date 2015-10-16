@@ -77,10 +77,11 @@ def send_people(message):
     mybot.reply_to(message, "Los loleros son: \n"
                             " - Oscar alias @VincentJackal \n"
                             " - Jose alias Dent @Felizzola \n"
+                            " - Fredy alias fred @fredsnake \n"
                             " - Leo alias RTBrownyE @RioTBrownyE \n"
                             " - DavoPls alias Davox0 @Davo76 \n"
                             " - Gabo alias WardDragon @GaboFDC \n"
-                            " - Leidy alias aniita @aniita13 \n")
+                            " - Leidy alias aniita @aniita13 (pero nos abandonó )\n")
 
 @mybot.message_handler(func=lambda message: True)
 def reply_all(message):
