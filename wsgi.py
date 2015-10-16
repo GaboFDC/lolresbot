@@ -84,6 +84,10 @@ def send_people(message):
                             " - Gabo alias WardDragon @GaboFDC \n"
                             " - Leidy alias aniita @aniita13 (pero nos abandonó )\n")
 
+@mybot.message_handler(commands=['davo'])
+def send_davo(message):
+    mybot.reply_to(message, "Smite al nexo"
+
 @mybot.message_handler(func=lambda message: True)
 def reply_all(message):
     MEME=random.choice(MEMES)
