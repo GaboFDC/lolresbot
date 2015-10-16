@@ -88,6 +88,10 @@ def send_people(message):
 def send_davo(message):
     mybot.reply_to(message, "Smite al nexo"
 
+@mybot.message_handler(commands=['dent'])
+def send_dent(message):
+    mybot.reply_to(message, "Dent no penta"
+
 @mybot.message_handler(func=lambda message: True)
 def reply_all(message):
     MEME=random.choice(MEMES)
