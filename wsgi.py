@@ -69,9 +69,17 @@ if __name__ == '__main__':
     httpd.handle_request()
 
 # Defining message for handling start and help commands
-@mybot.message_handler(commands=['start', 'help'])
+@mybot.message_handler(commands=['start'])
 def send_welcome(message):
     mybot.reply_to(message, "Hola, este es el Bot del grupo de League of Legends de la Resistencia \n \n R&R")
+
+@mybot.message_handler(commands=['help'])
+def send_welcome(message):
+    mybot.reply_to(message, "Los comandos son:\n"
+                            " /pipol - Muestra la gente que juega\n"
+                            " /davo \n"
+                            " /dent \n"
+                            " /gabo \n")
 
 @mybot.message_handler(commands=['pipol'])
 def send_people(message):
@@ -86,15 +94,15 @@ def send_people(message):
 
 @mybot.message_handler(commands=['davo'])
 def send_davo(message):
-    mybot.reply_to(message, "Flash al red"
+    mybot.reply_to(message, "Flash al red")
 
 @mybot.message_handler(commands=['dent'])
 def send_dent(message):
-    mybot.reply_to(message, "Dent no penta"
+    mybot.reply_to(message, "Dent no penta")
 
 @mybot.message_handler(commands=['gabo'])
 def send_gabo(message):
-    mybot.reply_to(message, "Allstar=Alistar"
+    mybot.reply_to(message, "Allstar=Alistar")
 
 @mybot.message_handler(func=lambda message: True)
 def reply_all(message):
