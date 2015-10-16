@@ -11,11 +11,11 @@ mybot = telebot.TeleBot(TOKEN)
 
 mybot.get_me()
 
-MEMES = ["Davo Pls", "Si", "Smite al nexo", "GG izi",
+MEMES = ["Davo Pls", "Smite al nexo", "GG izi",
          "Bronzooooooodia el immortal", "Soy smurf de diamante, yo carreo - 0/24/1", "Coño de la madre!!!", "</3",
          "Tu papá", "Report", "1vs1? n00b", "El dragon no esta, se perdió :o", "Me la pelan todos",
          "Lo siento, mis respuestas son limitadas", "El bot nunca duerme", "KS = Kill Secured",
-         "Estas seguro de eso?", "No", "Tal vez", "La verdad no sé", "Dejame pensarlo", "Mejor haga una davo"
+         "Estas seguro de eso?", "La verdad no sé", "Dejame pensarlo", "Mejor haga una davo",
          "Creo que tengo que meditar sobre eso", "Sin palabras...", "Superminions OP, me mataron :c",
          "Ya tengo buena orografía", "Stop bullying :c", "Los quiero <3", "Anita es fakker detras de camaras"]
 
@@ -79,7 +79,8 @@ def send_welcome(message):
                             " /pipol - Muestra la gente que juega\n"
                             " /davo \n"
                             " /dent \n"
-                            " /gabo \n")
+                            " /gabo \n"
+                            " /pregunta - Responde a una pregunta si, no, talvez \n")
 
 @mybot.message_handler(commands=['pipol'])
 def send_people(message):
@@ -103,6 +104,12 @@ def send_dent(message):
 @mybot.message_handler(commands=['gabo'])
 def send_gabo(message):
     mybot.reply_to(message, "Allstar=Alistar")
+
+@mybot.message_handler(commands=['pregunta'])
+def send_pregunta(message):
+    ANSWERS = ["Si", "No", "Talvez"]
+    ANSWER=random.choice(ANSWERS)
+    mybot.reply_to(message, ANSWER)
 
 @mybot.message_handler(func=lambda message: True)
 def reply_all(message):
