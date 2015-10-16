@@ -92,6 +92,10 @@ def send_davo(message):
 def send_dent(message):
     mybot.reply_to(message, "Dent no penta"
 
+@mybot.message_handler(commands=['gabo'])
+def send_gabo(message):
+    mybot.reply_to(message, "Allstar=Alistar"
+
 @mybot.message_handler(func=lambda message: True)
 def reply_all(message):
     MEME=random.choice(MEMES)
