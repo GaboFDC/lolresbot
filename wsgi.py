@@ -86,7 +86,7 @@ def send_people(message):
 
 @mybot.message_handler(commands=['davo'])
 def send_davo(message):
-    mybot.reply_to(message, "Smite al nexo"
+    mybot.reply_to(message, "Flash al red"
 
 @mybot.message_handler(commands=['dent'])
 def send_dent(message):
