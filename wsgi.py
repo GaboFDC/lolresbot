@@ -3,9 +3,13 @@
 
 import os
 import telebot
+import logging
 import random
 
 TOKEN = '134776856:AAFtSET8UmwZkEglBPfxO97KdlWL66aDvFM'
+
+logger = telebot.logger
+telebot.logger.setLevel(logging.DEBUG) # Outputs debug messages to console.
 
 mybot = telebot.TeleBot(TOKEN)
 
