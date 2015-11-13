@@ -100,7 +100,7 @@ def send_people(message):
                             " - David Tamayo alias niñorata DestructorMLG @pendiente \n"
                             " - Rataeltriforce alias @RATAELTRIFORCE \n"
                             " - Alfredo \n"
-                            " - Adriana \n"
+                            " - Adriana alias Atenea30 @pendiente \n"
                             " - Beto alias @Darkfields \n")
 
 @mybot.message_handler(commands=['davo'])
