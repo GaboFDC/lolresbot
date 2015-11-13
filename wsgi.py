@@ -115,6 +115,10 @@ def send_dent(message):
 def send_gabo(message):
     mybot.reply_to(message, "Allstar=Alistar")
 
+@mybot.message_handler(commands=['niñorata'])
+def send_gabo(message):
+    mybot.reply_to(message, "Garen 6 Warmong build somalia")
+
 @mybot.message_handler(commands=['pregunta'])
 def send_pregunta(message):
     ANSWERS = ["Si", "No", "Talvez"]
