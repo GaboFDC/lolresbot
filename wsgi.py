@@ -90,12 +90,18 @@ def send_welcome(message):
 def send_people(message):
     mybot.reply_to(message, "Los loleros son: \n"
                             " - Oscar alias @VincentJackal \n"
-                            " - Jose alias Dent @Felizzola \n"
-                            " - Fredy alias fred @fredsnake \n"
-                            " - Leo alias RTBrownyE @RioTBrownyE \n"
-                            " - DavoPls alias Davox0 @Davo76 \n"
-                            " - Gabo alias WardDragon @GaboFDC \n"
-                            " - Leidy alias aniita @aniita13 (pero nos abandonó )\n")
+                            " - Jose alias Dent, ResportPls @Felizzola \n"
+                            " - Leo alias RTBrownyE, lumacro @RioTBrownyE \n"
+                            " - Davo alias DavoPls @Davox0 \n"
+                            " - Gabo alias WardDragon, daredel @GaboFDC \n"
+                            " - Leidy alias nos abandonó @Putoslolresis \n"
+                            " - Natha alias KarenTsuki @NadieEspecial \n"
+                            " - Daniela alias @Pardum"
+                            " - David Tamayo alias niñorata DestructorMLG @pendiente \n"
+                            " - Rataeltriforce alias @RATAELTRIFORCE \n"
+                            " - Alfredo \n"
+                            " - Adriana \n"
+                            " - Beto alias @Darkfields \n")
 
 @mybot.message_handler(commands=['davo'])
 def send_davo(message):
