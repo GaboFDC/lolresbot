@@ -115,8 +115,8 @@ def send_pregunta(message):
     ANSWER=random.choice(ANSWERS)
     mybot.reply_to(message, ANSWER)
 
-@mybot.message_handler(func=lambda message: True)
-def reply_all(message):
+@mybot.message_handler(commands=['meme'])
+def send_pregunta(message):
     MEME=random.choice(MEMES)
     mybot.reply_to(message, MEME)
 
